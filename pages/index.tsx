@@ -1,7 +1,7 @@
-import Films from '@films/films'
+import Movies from '@movies/movies'
 
 const Index = () => {
-  return <Films />
+  return <Movies />
 }
 
 export default Index

@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl'
 import type { ReactElement } from 'react'
 import FormattedDate from 'src/components/FormattedDate'
 
-const FilmOverview = (props: { item: MovieDto }) => {
+const MovieOverview = (props: { item: MovieDto }) => {
   const tr = useTranslations('COMMON')
 
   const Property = (props: { label: string; value: string | ReactElement }) => {
@@ -41,4 +41,4 @@ const FilmOverview = (props: { item: MovieDto }) => {
   )
 }
 
-export default FilmOverview
+export default MovieOverview

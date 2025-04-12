@@ -2,7 +2,7 @@ import type { MovieDto } from '@t/MovieDto'
 import { useTranslations } from 'next-intl'
 import FormattedDate from 'src/components/FormattedDate';
 
-const Film = (props: { item: MovieDto; key: number; onClick: () => void }) => {
+const Movie = (props: { item: MovieDto; key: number; onClick: () => void }) => {
   const tr = useTranslations('COMMON')
   return (
     <div key={props.key} onClick={props.onClick} onKeyDown={props.onClick}>
@@ -18,4 +18,4 @@ const Film = (props: { item: MovieDto; key: number; onClick: () => void }) => {
   )
 }
 
-export default Film
+export default Movie

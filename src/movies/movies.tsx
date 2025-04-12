@@ -1,13 +1,13 @@
 import { Checkbox, Modal, Pagination } from '@mantine/core'
 import type { MovieDto } from '@t/MovieDto'
 import { useState } from 'react'
-import Film from './film'
-import styles from './film.module.scss'
+import Movie from './movie'
+import styles from './movie.module.scss'
 import useGetMovies from './useGetMovies'
 import { useTranslations } from 'next-intl'
-import FilmOverview from './film_overview'
+import MovieOverview from './movie_overview'
 
-const Films = () => {
+const Movies = () => {
   const tr = useTranslations('COMMON')
   const [opened, setOpened] = useState(false)
   const [selected, setSelected] = useState<MovieDto | undefined>(undefined)
@@ -37,7 +37,7 @@ const Films = () => {
         }}
         title={selected?.title}
       >
-        {selected && <FilmOverview item={selected} />}
+        {selected && <MovieOverview item={selected} />}
       </Modal>
       <Checkbox
         label={tr('WITH_VIDEO')}
@@ -45,10 +45,10 @@ const Films = () => {
         onChange={(event) => setChecked(event.currentTarget.checked)}
         mt="sm"
       />
-      <div className={styles.film}>
+      <div className={styles.movie}>
         {data?.results.map((item: MovieDto) => {
           return (
-            <Film item={item} key={item.id} onClick={() => openModal(item)} />
+            <Movie item={item} key={item.id} onClick={() => openModal(item)} />
           )
         })}
       </div>
@@ -64,4 +64,4 @@ const Films = () => {
   )
 }
 
-export default Films
+export default Movies
