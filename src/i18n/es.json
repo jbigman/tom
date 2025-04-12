@@ -1,0 +1,12 @@
+{
+	"COMMON": {
+		"COMMON": {
+			"SEND": "Envoyer",
+			"SKIP": "Passer",
+			"EDIT": "Modifier",
+			"SHARE": "Partager",
+			"YES": "Oui",
+			"NO": "Non"
+		}
+	}
+}
