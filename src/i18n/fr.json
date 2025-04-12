@@ -1,12 +1,8 @@
 {
 	"COMMON": {
-		"COMMON": {
-			"SEND": "Envoyer",
-			"SKIP": "Passer",
-			"EDIT": "Modifier",
-			"SHARE": "Partager",
-			"YES": "Oui",
-			"NO": "Non"
-		}
+		"WITH_VIDEO": "Films avec bande annonce",
+		"GENRES": "Genres",
+		"RELEASE_DATE": "Date de sortie",
+		"SCORE": "Score"
 	}
 }

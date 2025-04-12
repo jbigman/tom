@@ -1,12 +1,8 @@
 {
 	"COMMON": {
-		"COMMON": {
-			"SEND": "Send",
-			"SKIP": "Skip",
-			"EDIT": "Edit",
-			"SHARE": "Share",
-			"YES": "Yes",
-			"NO": "No"
-		}
+		"WITH_VIDEO": "Only movies with video",
+		"GENRES": "Genres",
+		"RELEASE_DATE": "Release date",
+		"SCORE": "Score"
 	}
 }
